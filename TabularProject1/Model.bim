@@ -54,8 +54,8 @@
               <Name>ID</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>BigInt</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>ID</ColumnID>
@@ -88,8 +88,8 @@
               <Name>DSC</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>WChar</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>WChar</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>DSC</ColumnID>
@@ -122,8 +122,8 @@
               <Name>VALUE</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>BigInt</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>VALUE</ColumnID>
@@ -146,16 +146,16 @@
               <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
+                  <NullProcessing>Error</NullProcessing>
                   <DataType>Integer</DataType>
                   <DataSize>4</DataSize>
-                  <NullProcessing>Error</NullProcessing>
                   <Source xsi:type="ddl200_200:RowNumberBinding" />
                 </KeyColumn>
               </KeyColumns>
               <NameColumn>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <DataType>WChar</DataType>
                 <DataSize>4</DataSize>
-                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <Source xsi:type="ddl200_200:RowNumberBinding" />
               </NameColumn>
               <AttributeRelationships>
@@ -222,8 +222,8 @@
               <Name>ID</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>BigInt</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>ID</ColumnID>
@@ -256,8 +256,8 @@
               <Name>DSC</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>WChar</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>WChar</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>DSC</ColumnID>
@@ -290,8 +290,8 @@
               <Name>VALUE</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <DataType>BigInt</DataType>
                   <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>VALUE</ColumnID>
@@ -314,16 +314,16 @@
               <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
+                  <NullProcessing>Error</NullProcessing>
                   <DataType>Integer</DataType>
                   <DataSize>4</DataSize>
-                  <NullProcessing>Error</NullProcessing>
                   <Source xsi:type="ddl200_200:RowNumberBinding" />
                 </KeyColumn>
               </KeyColumns>
               <NameColumn>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <DataType>WChar</DataType>
                 <DataSize>4</DataSize>
-                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <Source xsi:type="ddl200_200:RowNumberBinding" />
               </NameColumn>
               <AttributeRelationships>
@@ -341,6 +341,174 @@
                   <AttributeID>VALUE</AttributeID>
                   <OverrideBehavior>None</OverrideBehavior>
                   <Name>VALUE</Name>
+                </AttributeRelationship>
+              </AttributeRelationships>
+              <OrderBy>Key</OrderBy>
+              <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+            </Attribute>
+          </Attributes>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" />
+          </ProactiveCaching>
+        </Dimension>
+        <Dimension>
+          <ID>Table 1 1</ID>
+          <Name>Table 1</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>Sandbox</DataSourceViewID>
+            <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+            <ddl300:DataEmbeddingStyle valuens="ddl300_300">Embedded</ddl300:DataEmbeddingStyle>
+          </Source>
+          <UnknownMember valuens="ddl200_200">AutomaticNull</UnknownMember>
+          <ErrorConfiguration>
+            <KeyNotFound>IgnoreError</KeyNotFound>
+            <KeyDuplicate>ReportAndStop</KeyDuplicate>
+            <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+          </ErrorConfiguration>
+          <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+          <Language>1033</Language>
+          <UnknownMemberName>Unknown</UnknownMemberName>
+          <Attributes>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>A</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="General" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>1</ID>
+              <Name>1</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                    <ColumnID>_x0031_</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                  <ColumnID>_x0031_</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>B</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="Text" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>TESTE</ID>
+              <Name>TESTE</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                    <ColumnID>TESTE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                  <ColumnID>TESTE</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>C</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="General" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>4234</ID>
+              <Name>4234</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                    <ColumnID>_x0034_234</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                  <ColumnID>_x0034_234</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <ID>RowNumber</ID>
+              <Name>RowNumber</Name>
+              <Type valuens="ddl200_200">RowNumber</Type>
+              <Usage>Key</Usage>
+              <KeyColumns>
+                <KeyColumn>
+                  <NullProcessing>Error</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ddl200_200:RowNumberBinding" />
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
+                <DataType>WChar</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="ddl200_200:RowNumberBinding" />
+              </NameColumn>
+              <AttributeRelationships>
+                <AttributeRelationship>
+                  <AttributeID>1</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>1</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>TESTE</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>TESTE</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>4234</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>4234</Name>
                 </AttributeRelationship>
               </AttributeRelationships>
               <OrderBy>Key</OrderBy>
@@ -408,6 +576,26 @@
                 </Attribute>
               </Attributes>
             </Dimension>
+            <Dimension>
+              <ID>Table 1 1</ID>
+              <Name>Table 1</Name>
+              <DimensionID>Table 1 1</DimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TESTE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>4234</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>RowNumber</AttributeID>
+                  <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+                </Attribute>
+              </Attributes>
+            </Dimension>
           </Dimensions>
           <CubePermissions>
             <CubePermission>
@@ -453,8 +641,8 @@
                       <AttributeID>ID</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>BigInt</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>ID</ColumnID>
@@ -466,8 +654,8 @@
                       <AttributeID>DSC</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>WChar</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>DSC</ColumnID>
@@ -479,8 +667,8 @@
                       <AttributeID>VALUE</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>BigInt</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>VALUE</ColumnID>
@@ -566,8 +754,8 @@
                       <AttributeID>ID</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>BigInt</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>ID</ColumnID>
@@ -579,8 +767,8 @@
                       <AttributeID>DSC</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>WChar</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>DSC</ColumnID>
@@ -592,8 +780,8 @@
                       <AttributeID>VALUE</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <DataType>BigInt</DataType>
                           <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>VALUE</ColumnID>
@@ -625,6 +813,119 @@
                   <Source xsi:type="DsvTableBinding">
                     <DataSourceViewID>Sandbox</DataSourceViewID>
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
+                  </Source>
+                  <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+                  <ProcessingMode>Regular</ProcessingMode>
+                  <ProactiveCaching>
+                    <SilenceInterval>-PT1S</SilenceInterval>
+                    <Latency>-PT1S</Latency>
+                    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                    <Source xsi:type="ProactiveCachingInheritedBinding" />
+                  </ProactiveCaching>
+                </Partition>
+              </Partitions>
+              <ProactiveCaching>
+                <SilenceInterval>-PT1S</SilenceInterval>
+                <Latency>-PT1S</Latency>
+                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                <Source xsi:type="ProactiveCachingInheritedBinding" />
+              </ProactiveCaching>
+            </MeasureGroup>
+            <MeasureGroup>
+              <ID>Table 1 1</ID>
+              <Name>Table 1</Name>
+              <Measures>
+                <Measure>
+                  <ID>Table 1 1</ID>
+                  <Name>_Count Table 1</Name>
+                  <AggregateFunction>Count</AggregateFunction>
+                  <DataType>BigInt</DataType>
+                  <Source>
+                    <DataType>BigInt</DataType>
+                    <DataSize>8</DataSize>
+                    <Source xsi:type="RowBinding">
+                      <TableID>TableID</TableID>
+                    </Source>
+                  </Source>
+                  <Visible>false</Visible>
+                </Measure>
+              </Measures>
+              <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+              <ErrorConfiguration>
+                <KeyNotFound>IgnoreError</KeyNotFound>
+                <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+              </ErrorConfiguration>
+              <ProcessingMode>Regular</ProcessingMode>
+              <Dimensions>
+                <Dimension xsi:type="DegenerateMeasureGroupDimension">
+                  <CubeDimensionID>Table 1 1</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>1</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                            <ColumnID>_x0031_</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>TESTE</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>WChar</DataType>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                            <ColumnID>TESTE</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>4234</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <DataType>BigInt</DataType>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
+                            <ColumnID>_x0034_234</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>RowNumber</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Integer</DataType>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table_x0020_1</TableID>
+                            <ColumnID>RowNumber</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                      <Type>Granularity</Type>
+                    </Attribute>
+                  </Attributes>
+                  <ddl200_200:ShareDimensionStorage>Shared</ddl200_200:ShareDimensionStorage>
+                </Dimension>
+              </Dimensions>
+              <Partitions>
+                <Partition>
+                  <ID>Table 1</ID>
+                  <Name>Table 1</Name>
+                  <Source xsi:type="DsvTableBinding">
+                    <DataSourceViewID>Sandbox</DataSourceViewID>
+                    <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                   </Source>
                   <StorageMode valuens="ddl200_200">InMemory</StorageMode>
                   <ProcessingMode>Regular</ProcessingMode>
@@ -708,6 +1009,15 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
+                    <xs:element name="Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb" msdata:Locale="en-US" msprop:DataSourceID="PushedDataSource-F052E9FD-98DA-441C-A0C0-B84DA82E5F25">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="_x0031_" type="xs:string" minOccurs="0" />
+                          <xs:element name="TESTE" type="xs:string" minOccurs="0" />
+                          <xs:element name="_x0034_234" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:choice>
                 </xs:complexType>
               </xs:element>
@@ -738,6 +1048,21 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                 <DSC>Test 2</DSC>
                 <VALUE>20</VALUE>
               </Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b>
+              <Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+                <_x0031_>2</_x0031_>
+                <TESTE>TESTE2M</TESTE>
+                <_x0034_234>2333424</_x0034_234>
+              </Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+              <Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+                <_x0031_>3</_x0031_>
+                <TESTE>TESTE34</TESTE>
+                <_x0034_234>342</_x0034_234>
+              </Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+              <Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+                <_x0031_>4</_x0031_>
+                <TESTE>teste5</TESTE>
+                <_x0034_234>11</_x0034_234>
+              </Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
             </NewDataSet>
           </Schema>
         </DataSourceView>
