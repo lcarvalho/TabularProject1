@@ -409,6 +409,15 @@
               </Attributes>
             </Dimension>
           </Dimensions>
+          <CubePermissions>
+            <CubePermission>
+              <ID>CubePermission</ID>
+              <Name>CubePermission</Name>
+              <RoleID>Role</RoleID>
+              <Read>Allowed</Read>
+              <ReadSourceData>None</ReadSourceData>
+            </CubePermission>
+          </CubePermissions>
           <MeasureGroups>
             <MeasureGroup>
               <ID>Table 1</ID>
@@ -733,6 +742,20 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
           </Schema>
         </DataSourceView>
       </DataSourceViews>
+      <Roles>
+        <Role>
+          <ID>Role</ID>
+          <Name>Role</Name>
+        </Role>
+      </Roles>
+      <DatabasePermissions>
+        <DatabasePermission>
+          <ID>DatabasePermission</ID>
+          <Name>DatabasePermission</Name>
+          <RoleID>Role</RoleID>
+          <Read>Allowed</Read>
+        </DatabasePermission>
+      </DatabasePermissions>
     </Database>
   </ObjectDefinition>
 </Alter>
