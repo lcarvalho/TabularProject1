@@ -364,6 +364,11 @@
             <Source xsi:type="ProactiveCachingInheritedBinding" />
           </ProactiveCaching>
         </Dimension>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <NullProcessing>Error</NullProcessing>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
       </Dimensions>
       <Cubes>
         <Cube>
