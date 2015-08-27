@@ -523,6 +523,174 @@
             <Source xsi:type="ProactiveCachingInheritedBinding" />
           </ProactiveCaching>
         </Dimension>
+        <Dimension>
+          <ID>Table3</ID>
+          <Name>Table3</Name>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>Sandbox</DataSourceViewID>
+            <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+            <ddl300:DataEmbeddingStyle valuens="ddl300_300">Embedded</ddl300:DataEmbeddingStyle>
+          </Source>
+          <UnknownMember valuens="ddl200_200">AutomaticNull</UnknownMember>
+          <ErrorConfiguration>
+            <KeyNotFound>IgnoreError</KeyNotFound>
+            <KeyDuplicate>ReportAndStop</KeyDuplicate>
+            <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+          </ErrorConfiguration>
+          <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+          <Language>1033</Language>
+          <UnknownMemberName>Unknown</UnknownMemberName>
+          <Attributes>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>A</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="General" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>ID</ID>
+              <Name>ID</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                  <ColumnID>ID</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>B</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="General" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>Dsc</ID>
+              <Name>Dsc</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                    <ColumnID>Dsc</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                  <ColumnID>Dsc</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <Annotations>
+                <Annotation>
+                  <Name>ShortColumnId</Name>
+                  <Value>C</Value>
+                </Annotation>
+                <Annotation>
+                  <Name>Format</Name>
+                  <Value>
+                    <Format Format="General" xmlns="" />
+                  </Value>
+                </Annotation>
+              </Annotations>
+              <ID>Value</ID>
+              <Name>Value</Name>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                    <ColumnID>Value</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                  <ColumnID>Value</ColumnID>
+                </Source>
+              </NameColumn>
+              <OrderBy>Key</OrderBy>
+            </Attribute>
+            <Attribute>
+              <ID>RowNumber</ID>
+              <Name>RowNumber</Name>
+              <Type valuens="ddl200_200">RowNumber</Type>
+              <Usage>Key</Usage>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <DataSize>4</DataSize>
+                  <NullProcessing>Error</NullProcessing>
+                  <Source xsi:type="ddl200_200:RowNumberBinding" />
+                </KeyColumn>
+              </KeyColumns>
+              <NameColumn>
+                <DataType>WChar</DataType>
+                <DataSize>4</DataSize>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
+                <Source xsi:type="ddl200_200:RowNumberBinding" />
+              </NameColumn>
+              <AttributeRelationships>
+                <AttributeRelationship>
+                  <AttributeID>ID</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>ID_</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>Dsc</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Dsc</Name>
+                </AttributeRelationship>
+                <AttributeRelationship>
+                  <AttributeID>Value</AttributeID>
+                  <OverrideBehavior>None</OverrideBehavior>
+                  <Name>Value</Name>
+                </AttributeRelationship>
+              </AttributeRelationships>
+              <OrderBy>Key</OrderBy>
+              <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+            </Attribute>
+          </Attributes>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" />
+          </ProactiveCaching>
+        </Dimension>
       </Dimensions>
       <Cubes>
         <Cube>
@@ -589,6 +757,26 @@
                 </Attribute>
                 <Attribute>
                   <AttributeID>4234</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>RowNumber</AttributeID>
+                  <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <ID>Table3</ID>
+              <Name>Table3</Name>
+              <DimensionID>Table3</DimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dsc</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Value</AttributeID>
                 </Attribute>
                 <Attribute>
                   <AttributeID>RowNumber</AttributeID>
@@ -946,6 +1134,119 @@
                 <Source xsi:type="ProactiveCachingInheritedBinding" />
               </ProactiveCaching>
             </MeasureGroup>
+            <MeasureGroup>
+              <ID>Table3</ID>
+              <Name>Table3</Name>
+              <Measures>
+                <Measure>
+                  <ID>Table3</ID>
+                  <Name>_Count Table3</Name>
+                  <AggregateFunction>Count</AggregateFunction>
+                  <DataType>BigInt</DataType>
+                  <Source>
+                    <DataType>BigInt</DataType>
+                    <DataSize>8</DataSize>
+                    <Source xsi:type="RowBinding">
+                      <TableID>TableID</TableID>
+                    </Source>
+                  </Source>
+                  <Visible>false</Visible>
+                </Measure>
+              </Measures>
+              <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+              <ErrorConfiguration>
+                <KeyNotFound>IgnoreError</KeyNotFound>
+                <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+              </ErrorConfiguration>
+              <ProcessingMode>Regular</ProcessingMode>
+              <Dimensions>
+                <Dimension xsi:type="DegenerateMeasureGroupDimension">
+                  <CubeDimensionID>Table3</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                            <ColumnID>ID</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Dsc</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                            <ColumnID>Dsc</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Value</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                            <ColumnID>Value</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>RowNumber</AttributeID>
+                      <KeyColumns>
+                        <KeyColumn>
+                          <DataType>Integer</DataType>
+                          <Source xsi:type="ColumnBinding">
+                            <TableID>Table3</TableID>
+                            <ColumnID>RowNumber</ColumnID>
+                          </Source>
+                        </KeyColumn>
+                      </KeyColumns>
+                      <Type>Granularity</Type>
+                    </Attribute>
+                  </Attributes>
+                  <ddl200_200:ShareDimensionStorage>Shared</ddl200_200:ShareDimensionStorage>
+                </Dimension>
+              </Dimensions>
+              <Partitions>
+                <Partition>
+                  <ID>Table3</ID>
+                  <Name>Table3</Name>
+                  <Source xsi:type="DsvTableBinding">
+                    <DataSourceViewID>Sandbox</DataSourceViewID>
+                    <TableID>Table3_d7474199-181c-40b8-ae87-a1532da25465</TableID>
+                  </Source>
+                  <StorageMode valuens="ddl200_200">InMemory</StorageMode>
+                  <ProcessingMode>Regular</ProcessingMode>
+                  <ProactiveCaching>
+                    <SilenceInterval>-PT1S</SilenceInterval>
+                    <Latency>-PT1S</Latency>
+                    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                    <Source xsi:type="ProactiveCachingInheritedBinding" />
+                  </ProactiveCaching>
+                </Partition>
+              </Partitions>
+              <ProactiveCaching>
+                <SilenceInterval>-PT1S</SilenceInterval>
+                <Latency>-PT1S</Latency>
+                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                <Source xsi:type="ProactiveCachingInheritedBinding" />
+              </ProactiveCaching>
+            </MeasureGroup>
           </MeasureGroups>
           <MdxScripts>
             <MdxScript>
@@ -1018,6 +1319,15 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
+                    <xs:element name="Table3_d7474199-181c-40b8-ae87-a1532da25465" msdata:Locale="en-US" msprop:DataSourceID="PushedDataSource-F052E9FD-98DA-441C-A0C0-B84DA82E5F25">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="xs:string" minOccurs="0" />
+                          <xs:element name="Dsc" type="xs:string" minOccurs="0" />
+                          <xs:element name="Value" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:choice>
                 </xs:complexType>
               </xs:element>
@@ -1063,6 +1373,16 @@ ALTER CUBE CURRENTCUBE UPDATE DIMENSION Measures, Default_Member = [__No measure
                 <TESTE>teste5</TESTE>
                 <_x0034_234>11</_x0034_234>
               </Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb>
+              <Table3_d7474199-181c-40b8-ae87-a1532da25465>
+                <ID>1000</ID>
+                <Dsc>1000</Dsc>
+                <Value>1000</Value>
+              </Table3_d7474199-181c-40b8-ae87-a1532da25465>
+              <Table3_d7474199-181c-40b8-ae87-a1532da25465>
+                <ID>2000</ID>
+                <Dsc>2000</Dsc>
+                <Value>2000</Value>
+              </Table3_d7474199-181c-40b8-ae87-a1532da25465>
             </NewDataSet>
           </Schema>
         </DataSourceView>
