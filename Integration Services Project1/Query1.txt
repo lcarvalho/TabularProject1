@@ -1,4 +1,8 @@
 SELECT S.Id
 	, S.SaleDate
-	, S.SaleAmount
+	, SUM(SI.Amount)
 FROM [Sales] AS S
+LEFT JOIN [SaleItem] AS SI
+	ON S.Id = SI.SaleId
+GROUP BY S.Id
+	, S.SaleDate
