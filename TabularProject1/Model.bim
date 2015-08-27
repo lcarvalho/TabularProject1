@@ -54,8 +54,8 @@
               <Name>ID</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>ID</ColumnID>
@@ -88,8 +88,8 @@
               <Name>DSC</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>WChar</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>DSC</ColumnID>
@@ -122,8 +122,8 @@
               <Name>VALUE</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                     <ColumnID>VALUE</ColumnID>
@@ -146,16 +146,16 @@
               <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Error</NullProcessing>
                   <DataType>Integer</DataType>
                   <DataSize>4</DataSize>
+                  <NullProcessing>Error</NullProcessing>
                   <Source xsi:type="ddl200_200:RowNumberBinding" />
                 </KeyColumn>
               </KeyColumns>
               <NameColumn>
-                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <DataType>WChar</DataType>
                 <DataSize>4</DataSize>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <Source xsi:type="ddl200_200:RowNumberBinding" />
               </NameColumn>
               <AttributeRelationships>
@@ -222,8 +222,8 @@
               <Name>ID</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>ID</ColumnID>
@@ -256,8 +256,8 @@
               <Name>DSC</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>WChar</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>DSC</ColumnID>
@@ -290,8 +290,8 @@
               <Name>VALUE</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                     <ColumnID>VALUE</ColumnID>
@@ -314,16 +314,16 @@
               <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Error</NullProcessing>
                   <DataType>Integer</DataType>
                   <DataSize>4</DataSize>
+                  <NullProcessing>Error</NullProcessing>
                   <Source xsi:type="ddl200_200:RowNumberBinding" />
                 </KeyColumn>
               </KeyColumns>
               <NameColumn>
-                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <DataType>WChar</DataType>
                 <DataSize>4</DataSize>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <Source xsi:type="ddl200_200:RowNumberBinding" />
               </NameColumn>
               <AttributeRelationships>
@@ -390,8 +390,8 @@
               <Name>1</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                     <ColumnID>_x0031_</ColumnID>
@@ -424,8 +424,8 @@
               <Name>TESTE</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>WChar</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                     <ColumnID>TESTE</ColumnID>
@@ -458,8 +458,8 @@
               <Name>4234</Name>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Preserve</NullProcessing>
                   <DataType>BigInt</DataType>
+                  <NullProcessing>Preserve</NullProcessing>
                   <Source xsi:type="ColumnBinding">
                     <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                     <ColumnID>_x0034_234</ColumnID>
@@ -482,16 +482,16 @@
               <Usage>Key</Usage>
               <KeyColumns>
                 <KeyColumn>
-                  <NullProcessing>Error</NullProcessing>
                   <DataType>Integer</DataType>
                   <DataSize>4</DataSize>
+                  <NullProcessing>Error</NullProcessing>
                   <Source xsi:type="ddl200_200:RowNumberBinding" />
                 </KeyColumn>
               </KeyColumns>
               <NameColumn>
-                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <DataType>WChar</DataType>
                 <DataSize>4</DataSize>
+                <NullProcessing>ZeroOrBlank</NullProcessing>
                 <Source xsi:type="ddl200_200:RowNumberBinding" />
               </NameColumn>
               <AttributeRelationships>
@@ -641,8 +641,8 @@
                       <AttributeID>ID</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>ID</ColumnID>
@@ -654,8 +654,8 @@
                       <AttributeID>DSC</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>WChar</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>DSC</ColumnID>
@@ -667,8 +667,8 @@
                       <AttributeID>VALUE</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_72bac42e-f31c-4a3a-a9ad-7e79c762883a</TableID>
                             <ColumnID>VALUE</ColumnID>
@@ -754,8 +754,8 @@
                       <AttributeID>ID</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>ID</ColumnID>
@@ -767,8 +767,8 @@
                       <AttributeID>DSC</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>WChar</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>DSC</ColumnID>
@@ -780,8 +780,8 @@
                       <AttributeID>VALUE</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table2_c2f04c6c-f844-468d-8bd7-4e8b53be898b</TableID>
                             <ColumnID>VALUE</ColumnID>
@@ -867,8 +867,8 @@
                       <AttributeID>1</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                             <ColumnID>_x0031_</ColumnID>
@@ -880,8 +880,8 @@
                       <AttributeID>TESTE</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>WChar</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                             <ColumnID>TESTE</ColumnID>
@@ -893,8 +893,8 @@
                       <AttributeID>4234</AttributeID>
                       <KeyColumns>
                         <KeyColumn>
-                          <NullProcessing>Preserve</NullProcessing>
                           <DataType>BigInt</DataType>
+                          <NullProcessing>Preserve</NullProcessing>
                           <Source xsi:type="ColumnBinding">
                             <TableID>Table_x0020_1_830dc575-b7a7-4bfc-a327-8abecf714ddb</TableID>
                             <ColumnID>_x0034_234</ColumnID>
